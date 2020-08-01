@@ -24,5 +24,9 @@ Route::get('/test/header1','TestController@header1');
 
 Route::any('/user/login','User\IndexController@login');
 Route::any('/user/reg','User\IndexController@reg');
+Route::any('/user/reg','User\IndexController@reg');
+Route::any('/user/reg_do','User\IndexController@reg_do');
+
 Route::any('/user/index','User\IndexController@index');
 
+Route::any('/oauth/git','User\OauthController@git');

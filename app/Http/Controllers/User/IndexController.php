@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     //
+    public function index()
+    {
+        return view('user/index');
+    }
+
     public function login()
     {
     	return view('user/login');
@@ -17,8 +22,11 @@ class IndexController extends Controller
     {
     	return view('user/reg');
     }
-    public function index()
+
+    public function reg_do()
     {
-    	return view('user/index');
+        $data = request()->except('token'); 
     }
+
+    
 }
